@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="My Test Suite">
+    <listeners>
+        <listener class-name="org.testng.reporters.TestHTMLReporter"/>
+    </listeners>
+
+    <test verbose="2"  name="CalculatorTest">
+    <classes>
+        <class name="CalculatorTest"/>
+    </classes>
+    </test>
+
+    <test verbose="2"  name="DependencyTest">
+        <classes>
+            <class name="DependencyTest"/>
+        </classes>
+    </test>
+
+    <test verbose="2"  name="ParallelTest">
+        <classes>
+            <class name="ParallelTest"/>
+        </classes>
+    </test>
+
+    <test verbose="2"  name="DataDrivenTest">
+        <classes>
+            <class name="DataDrivenTest"/>
+        </classes>
+    </test>
+</suite>
